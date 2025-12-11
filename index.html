@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | SkillCraft Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>**Tic Tac Toe Web Game**</h1>
+
+    <div class="player-input">
+        <input type="text" id="playerX" placeholder="Player X Name">
+        <input type="text" id="playerO" placeholder="Player O Name">
+        <button id="start">Start Game</button>
+    </div>
+
+    <div class="score-board">
+        <p><span id="nameX">Player X</span>: <span id="scoreX">0</span></p>
+        <p><span id="nameO">Player O</span>: <span id="scoreO">0</span></p>
+    </div>
+
+    <div class="game">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <h2 id="status"></h2>
+    <button id="reset">New Round</button>
+
+    <div id="popup">
+        <span id="popup-msg"></span>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/2508/2508.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
